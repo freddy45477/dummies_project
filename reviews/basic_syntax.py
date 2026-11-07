@@ -67,7 +67,7 @@ for num in numbers:
     if num > 20:
         print(num)
 
-"""
+
 
 #finding stuff in lists
 employees = ["John", "Sarah", "Mike", "David", "Lisa"]
@@ -81,4 +81,55 @@ if name in lowercase_employees:
     print("employee found")
 else:
     print("employee not found")
+
+#Dictionaries
+computer = {
+    "brand": "Dell",
+    "model": "OptiPlex",
+    "ram": 32,
+    "storage": 512,
+    "os" : "Windows 11"
+
+}
+
+
+print ("Brand: " + computer["brand"])
+print ("Model: " + computer["model"])
+print ("RAM: " + str(computer["ram"]))
+print ("Storage: " + str(computer["storage"]))
+print ("OS: " + computer["os"])
+# functions
+def calculate_area(length, width):
+    return length*width
+
+area = calculate_area(5, 8)
+
+print (area)
+
+
+
+def check_password(password):
+    if len(str(password)) < 8:
+        return "password is too short"
+    else:
+        return "password accepted"
+
+result = check_password("pokem")
+print(result)
+"""
+numbers = [12, 45, 7, 89, 23, 56]
+
+def find_largest(numbers):
+    largest = 0
+    for num in numbers:
+        if num > largest:
+            largest = num
+    
+    return largest
+
+print(find_largest(numbers))
+
+
+
+    
 
